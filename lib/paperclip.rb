@@ -264,7 +264,8 @@ module Paperclip
                              :in      => range,
                              :message => message,
                              :if      => options[:if],
-                             :unless  => options[:unless]
+                             :unless  => options[:unless],
+                             :allow_nil => options[:allow_nil]
     end
 
     # Adds errors if thumbnail creation fails. The same as specifying :whiny_thumbnails => true.
